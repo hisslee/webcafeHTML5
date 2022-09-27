@@ -44,15 +44,12 @@ git push origin main
 git log --oneline
 ```
 
-## CLI 명령
-- cd webcafeHTML5
-
-##주요명령어(git)
-git remote -v
-git remote add lecture URL...
-git add .
-git add main.html
-git commit -m "..."
-git status
-git log --oneline
-git push origin main
+##주요명령어(git)  
+git remote -v  
+git remote add lecture URL...  
+git add .  
+git add main.html  
+git commit -m "..."  
+git status  
+git log --oneline  
+git push origin main  

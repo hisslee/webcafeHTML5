@@ -23,21 +23,36 @@ html, body{
   height: 10vh;
 }
 /* 메인콘텐츠 */
-.main{
+/* flex를 활용한 메인콘텐츠 배치 */
+/* .main{
   background-color: blue;
   height: 60vh;
   display: flex;
   flex-flow: row, nowrap;
   justify-content: space-around;
   padding: 30px 15px;
+} */
+
+/* float을 활용한 메인콘텐츠 배치 */
+.main{
+  background-color: blue;
+  display: flow-root;
+  min-height: 450px;
+  padding: 30px 15px;
 }
-
+/* .clearfix::after{
+  content: "";
+  clear:both;
+  display: block;
+} */
 .group{
-
+  margin: 0 15px;
+  float: left;
 }
 .group1{
   background-color: pink;
   width: 250px;
+  float: right;
 }
 .group2{
   background-color: lime;
@@ -47,6 +62,9 @@ html, body{
   background-color: salmon;
   width: 190px;
 }
+/* .clearfix{
+  clear: both;
+} */
 /* 슬로건 */
 .slogan{
   background-color: aqua;

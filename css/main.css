@@ -58,6 +58,38 @@ a{
   outline-offset: -4px;
   position: static;
 }
+
+/* 클래스 모듈 */
+.reset-list{
+  margin:0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.normal-style{
+  font-style: normal;
+}
+.gradient-effect{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: linear-gradient(#ccc, #eee);
+  background-color: #ccc;
+}
+
+.spacing-sm{
+  padding: 10px;
+}
+.spacing-md{
+  padding:15px;
+}
+.accent-color{
+  color : #dd422a;
+}
+.headline{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin:0;
+}
+
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
@@ -615,8 +647,55 @@ a{
   padding: 8px;
 }
 
+/* 신규이벤트 */
+.event{
+  border-bottom: ipx solid #999;
+}
+.event-title{
+  float: left;
+}
 
+.event-button{
+  height: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: end;
+  /* gap:5px; */
+}
+/* .event-button-prev, .event-button-next{
+  width: 19px;
+  padding:18px 0 0 0;
+  border: 0;
+  background:url(./images/back_forward.png);
+} */
+.event-button button{
+  width: 19px;
+  padding:18px 0 0 0;
+  border: 0;
+  background:url(./images/back_forward.png);
+}
+/* .event-button button:focus{
+  outline: 4px solid blueviolet;
+} */
 
+.event-button-prev{
+  margin-right: 5px;
+}
+.event-button-next{
+  background-position: -36px 0 !important;
+}
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+.event-thumbnail img{
+  box-shadow: 5px 5px 0 0 #999;
+}
+
+/* 관련사이트 */
+.relate{
+
+}
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */

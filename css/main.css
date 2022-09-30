@@ -81,6 +81,9 @@ a{
 .spacing-md{
   padding:15px;
 }
+.gap-top-md{
+  margin-top: 20px;
+}
 .accent-color{
   color : #dd422a;
 }
@@ -722,6 +725,52 @@ a{
   flex:0 0 100%;
   padding: 0 15px;
 }
+
+/* 인기 사이트 */
+.favorite{
+  position: relative;
+}
+.favorite-list{
+  margin-top:10px;
+}
+.favorite-list li{
+  counter-increment: number;
+  margin-top:8px;
+  position: relative;
+}
+.favorite-list li::before{
+  display: inline-block;
+  content: counter(number);
+  width:16px;
+  background: #aaa;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  color:#fff;
+}
+.up, .stop, .down{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width:11px;
+  height:9px;
+  margin:-5px;
+  background: url(./images/rank.png) no-repeat;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+.favorite-more{
+  position:absolute;
+  top:-8px;
+  right: -8px;
+  padding:8px;
+}
+
 /* 슬로건 */
 .slogan{
   /* background-color: aqua; */
